@@ -11,14 +11,12 @@ export default function App () {
   const [passwordValue, setPasswordValue] = useState("");
   const [modalVisible, setModalVisible] = useState(false);
 
-  //FUNÇÃO PARA GERAR SENHA ALEATÓRIA
+
   function generatePassword() {
-    // Inicializa uma string vazia para armazenar a senha gerada
+
     let password = "";
 
-    // Loop que executa 'size' vezes para gerar cada caractere da senha
     for (let i = 0; i < size; i++) {
-    // Gera um número decimal aleatório entre 0 (inclusive) e o comprimento de 'charset' (exclusivo)
       password += charset.charAt(Math.floor(Math.random() * charset.length));
     }
 
