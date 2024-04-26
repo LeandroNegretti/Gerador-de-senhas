@@ -42,7 +42,6 @@ export default function App () {
           maximumTrackTintColor='#FF0000'
           minimumTrackTintColor='#000'
           value={size}
-          //atalizando valor da useState
           onValueChange={(value) => setSize(Math.round(value))}
         />
       </View>
